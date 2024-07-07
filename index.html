@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please answer this question to redeem your gift</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        
+        body {
+            font-family: 'Luckiest Guy', cursive;
+            margin: 20px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        #question {
+            margin: 20px 0;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: red;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please answer this question to redeem your gift</h1>
+    <div id="game">
+        <p id="question">Answer the following questions to reveal the birthday wish.</p>
+        <input type="text" id="answer" placeholder="Your answer here">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
